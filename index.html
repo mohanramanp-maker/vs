@@ -2,13 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>MOHAN ENTERPRISES | International Trade Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOHAN ENTERPRISES</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0a2a66;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1509395176047-4a66953fd231');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0a2a66;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact-box {
+            background: #0a2a66;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px){
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 10px;
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-<H1>william</H1>
-<h1>mohan enterprises</h1>
-<img width="200px" src="logo.jpeg" alt="">  
-<p>my profile text </p>  
+
+<header>
+    <h1>MOHAN ENTERPRISES</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#overview">Corporate Overview</a>
+        <a href="#services">Business Segments</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h2>Global Trading & Industrial Project Solutions</h2>
+        <p>Delivering Excellence Since 2020</p>
+    </div>
+</section>
+
+<section id="overview">
+    <h2 class="section-title">Company Overview</h2>
+    <p>
+        MOHAN ENTERPRISES is a diversified Indian company involved in international trade,
+        engineering supplies, industrial projects, and equipment supply. The company operates
+        across multiple sectors including agriculture mechanization, healthcare,
+        water & wastewater management, and infrastructure solutions.
+    </p>
+
+    <br><br>
+
+    <h3>Key Information</h3>
+    <p><strong>Founded:</strong> 2020</p>
+    <p><strong>Industry:</strong> International Trade & Development</p>
+    <p><strong>Headquarters:</strong> Tamil Nadu, India</p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Business Segments</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Agriculture Mechanization</h3>
+            <p>Supply of modern agricultural equipment and processing solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Healthcare Equipment</h3>
+            <p>Import & export of medical and healthcare technology products.</p>
+        </div>
+
+        <div class="card">
+            <h3>Water & Wastewater</h3>
+            <p>Industrial water treatment and wastewater management solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Engineering Supplies</h3>
+            <p>Industrial machinery, project materials, and global sourcing solutions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <h2 class="section-title">Our Leadership</h2>
+
+    <div class="card">
+        <h3>Mohan</h3>
+        <p>Managing Director</p>
+        <p>Leading the company with vision, integrity, and global business strategy.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>Head Office Address:</strong></p>
+        <p>8 & 9, Mohan House, Community Center,<br>
+        Madurai, India</p>
+
+        <br>
+
+        <p><strong>Email:</strong> mohanenterprises@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 MOHAN ENTERPRISES. All Rights Reserved.
+</footer>
+
 </body>
 </html>
